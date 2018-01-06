@@ -3,12 +3,12 @@ SRC_DIR=        $(realpath ..)
 # Must list all project files without the main() function
 # Criterion uses its own main() ;
 # having a main() in any .c file will have the build fail
-SRC=            main.c
+SRC=            src/main.c
 
 SRC_UT_DIR=     $(realpath .)
 
 # Must list all files containing unit tests
-SRC_UT=    	test_add.c
+SRC_UT=    	test/test_add.c
 
 OBJ=            $(SRC:.c=.o) $(SRC_UT:.c=.o)
 
